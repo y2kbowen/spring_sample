@@ -2,10 +2,12 @@ package com.y2kbowen.repository;
 
 import com.y2kbowen.model.Customer;
 import javafx.scene.control.CustomMenuItem;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
     @Override
